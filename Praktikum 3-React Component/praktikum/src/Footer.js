@@ -8,5 +8,7 @@ const Footer = (props) => {
             <p>Nilai ini ditampilkan dari props : { props.judul } </p>
             <p>Nama Saya : { props.nama } </p>
         </div>
-    )
+    );
 }
+
+export default Footer;

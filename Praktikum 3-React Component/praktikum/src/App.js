@@ -14,7 +14,7 @@ class App extends Component {
         <List/>
         <Footer judul='Halaman Footer' nama='Rizkina' />
       </div>
-    )
+    );
   }
 }
 
