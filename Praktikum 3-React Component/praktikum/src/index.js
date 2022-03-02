@@ -5,18 +5,37 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { render } from '@testing-library/react';
 
-function HelloComponent(){
-  return HelloComponent
-}
+class Test extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hello : "World!" };
+  }
 
-class StateFullComponent extends React.Component{
+  componentWillMount() {
+    console.log("componentWillMount()");
+  }
+
+  componentDidMount() {
+    console.log("componentDidMount()");
+  }
+
+  changeState() {
+    this.setState({ hello : "Geek!" })
+  }
   render() {
-    return <p>StateFullComponent</p>
+    return (
+      <div>
+        <h1>GeeksForGeeks.org, Hello { this.state.hello }</h1>
+        <h2>
+          <a onClick={ this.changeState.bind(this) }>Press Here!</a>
+        </h2>
+      </div>
+    );
   }
 }
 
 ReactDOM.render(
-  <StateFullComponent />,
+  <Test />,
   document.getElementById('root')
 );
 
