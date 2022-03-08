@@ -5,8 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { render } from '@testing-library/react';
 import LoginComponent from './component/LoginComponent';
+import Test from './Test';
+
 
 ReactDOM.render(
+  // <App />,
+  // <Test />,
   <LoginComponent />,
   document.getElementById('root')
 );
