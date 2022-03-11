@@ -1,0 +1,49 @@
+{
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nim": 180823453,
+      "nama": "Mahasiswa 1",
+      "alamat": "Jl. Soekarno Hatta No. 9 Malang",
+      "hp": "081802023249",
+      "angkatan": 2018,
+      "status": "aktif"
+    },
+    {
+      "id": 2,
+      "nim": 180823454,
+      "nama": "Mahasiswa 2",
+      "alamat": "Jl. Basuki Rahmad No. 10 Jember",
+      "hp": "081852891392",
+      "angkatan": 2014,
+      "status": "lulus"
+    },
+    {
+      "id": 3,
+      "nim": 180823455,
+      "nama": "Mahasiswa 3",
+      "alamat": "Jl. Ibu Kartini No. 9 Probolinggo",
+      "hp": "080812123434",
+      "angkatan": 2019,
+      "status": "cuti"
+    },
+    {
+      "id": 4,
+      "nim": 180823456,
+      "nama": "Mahasiswa 4",
+      "alamat": "Jl. Pahlawan No. 102 Lumajang",
+      "hp": "083526217642",
+      "angkatan": 2020,
+      "status": "aktif"
+    },
+    {
+      "id": 1647041151589,
+      "nim": "1941720808",
+      "nama": "Nina",
+      "alamat": "Jl. Suhat 101, Malang",
+      "hp": "081208120812",
+      "angkatan": "2019",
+      "status": "cuti"
+    }
+  ]
+}
