@@ -4,70 +4,101 @@ import {
   Routes,
   Route,
   Link,
-  useParams
+  useLocation,
+  useNavigate,
+  Navigate
 } from "react-router-dom";
 
 export default function AuthExample() {
   return (
     <Router>
       <div>
+        <AuthButton />
+
         <ul>
           <li>
-            <Link to="/public">Home</Link>
+            <Link to="/public">Public Page</Link>
           </li>
           <li>
-            <Link to="/topics">Topics</Link>
+            <Link to="/private">Private Page</Link>
           </li>
         </ul>
         <hr />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="topics/*" element={<Topics />} >
-          </Route>
+          <Route path="/public" element={<PublicPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route 
+            path="/private" 
+            element={
+              <PrivateRoute>
+                <ProtectedPage />
+              </PrivateRoute>
+            } 
+          />
         </Routes>
       </div>
     </Router>
   );
 }
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
+const fakeAuth = {
+  isAuthenticated : false,
+  authenticate(cb) {
+    fakeAuth.isAuthenticated = true;
+    setTimeout(cb, 100);
+  },
+  signout(cb) {
+    fakeAuth.isAuthenticated = false;
+    setTimeout(cb, 100);
+  }
+};
+
+function AuthButton() {
+  let history = useNavigate();
+
+  return fakeAuth.isAuthenticated ? (
+    <p>
+      Welcome!{" "}
+      <button
+        onClick={() => {
+          fakeAuth.signout(() => history.push("/"));
+        }}
+        >
+          Sign out
+        </button>
+    </p>
+  ) : (
+    <p>You are not logged in.</p>
   );
 }
 
-function Topics() {
-  return (
-    <div>
-      <h2>Topics</h2>
-      <ul>
-        <li>
-          <Link to={"/topics/Sate, Nasi Goreng"}>Kuliner</Link>
-        </li>
-        <li>
-          <Link to={"/topics/Wisata alam, Museum"}>Travelling</Link>
-        </li>
-        <li>
-          <Link to={"/topics/Ibis, JW Marriot"}>Review Hotel</Link>
-        </li>
-      </ul>
-
-      <Routes>
-        <Route path="/" element={<h3>Please select a topic.</h3>} />
-        <Route path=":id" element={<Topic />} />
-      </Routes>
-    </div>
-  );
+function PrivateRoute({ children }) {
+  return fakeAuth.isAuthenticated ? ( children ) : <Navigate to={{ pathname: "/login" }} />;
 }
 
-function Topic() {
-  let { id } = useParams();
+function PublicPage() {
+  return <h3>Public</h3>;
+}
+
+function ProtectedPage() {
+  return <h3>Private</h3>
+}
+
+function LoginPage() {
+  let history = useNavigate();
+  let location = useLocation();
+
+  let { from } = location.state || { from: { pathname: "/" } };
+  let login = () => {
+    fakeAuth.authenticate(() => {
+      history.replace(from);
+    });
+  };
 
   return (
     <div>
-      <h3>{id}</h3>
+      <p>You must log in to view the page at { from.pathname }</p>
+      <button onClick={login}>Log in</button>
     </div>
-  )
+  );
 }
