@@ -7,40 +7,67 @@ import {
   useParams
 } from "react-router-dom";
 
-export default function ParamsExample() {
+export default function AuthExample() {
   return (
     <Router>
       <div>
-        <h2>Accounts</h2>
         <ul>
           <li>
-            <Link to="/netflix">Netflix</Link>
+            <Link to="/public">Home</Link>
           </li>
           <li>
-            <Link to="/gmail">Gmail</Link>
-          </li>
-          <li>
-            <Link to="/yahoo">Yahoo</Link>
-          </li>
-          <li>
-            <Link to="/amazon">Amazon</Link>
+            <Link to="/topics">Topics</Link>
           </li>
         </ul>
         <hr />
         <Routes>
-          <Route exact path="/:id" element={<Child />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="topics/*" element={<Topics />} >
+          </Route>
         </Routes>
       </div>
     </Router>
   );
 }
 
-function Child() {
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+
+function Topics() {
+  return (
+    <div>
+      <h2>Topics</h2>
+      <ul>
+        <li>
+          <Link to={"/topics/Sate, Nasi Goreng"}>Kuliner</Link>
+        </li>
+        <li>
+          <Link to={"/topics/Wisata alam, Museum"}>Travelling</Link>
+        </li>
+        <li>
+          <Link to={"/topics/Ibis, JW Marriot"}>Review Hotel</Link>
+        </li>
+      </ul>
+
+      <Routes>
+        <Route path="/" element={<h3>Please select a topic.</h3>} />
+        <Route path=":id" element={<Topic />} />
+      </Routes>
+    </div>
+  );
+}
+
+function Topic() {
   let { id } = useParams();
 
   return (
     <div>
-      <h3>ID : {id}</h3>
+      <h3>{id}</h3>
     </div>
-  );
+  )
 }
