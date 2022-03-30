@@ -29,7 +29,7 @@ class table extends Component {
                     </ol>
                 </nav>
                 {this.props.todos.length !== 0 ? (
-                    <table style={{ marginTop: "60px" }} className="table table-hover table-dark">
+                    <table style={{ marginTop: "60px" }} className="table table-hover table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">Todos</th>

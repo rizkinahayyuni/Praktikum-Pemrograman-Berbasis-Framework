@@ -9,19 +9,6 @@ import reportWebVitals from './reportWebVitals';
 import CreateTodo from "./containers/createTodo";
 import Table from "./containers/table";
 
-// const store = compose(
-//   window.devToolsExtension ? window.devToolsExtension() : f => f
-// )(createStore)(MainReducer)
-
-
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <createTodo />
-//     <Table />
-//   </Provider>
-//   , document.getElementById('root')
-// );
-
 const store = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 )(createStore)(MainReducer)
