@@ -17,8 +17,7 @@ class SampleComponent extends Component {
             value: ''
         }
         this.handleChange = this.handleChange.bind(this);
-    }
-    getCurrentState() {
+    } getCurrentState() {
         console.log(this.state.value)
         return this.state.value;
     }

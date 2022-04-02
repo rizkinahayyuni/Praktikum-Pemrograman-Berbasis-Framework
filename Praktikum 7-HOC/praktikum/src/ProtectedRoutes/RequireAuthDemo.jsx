@@ -19,7 +19,7 @@ class RequireAuthDemo extends Component {
                 <ul className="nav navbar-nav">
                     <li><Link to={`${match.url}/home/`}>Home</Link></li>
                     <li><Link to={`${match.url}/contacts`}>Contacts(Protected Route)
-                    </Link></li>
+</Link></li>
                 </ul>
 
                 <Switch>
@@ -35,7 +35,7 @@ const Home = () => {
     return (<div> Navigating to the protected route gets redirected to /login </div>);
 }
 const Contacts = () => {
-return(<div> Contacts </div>);
+    return (<div> Contacts </div>);
 
 }
-        export default RequireAuthDemo;
+export default RequireAuthDemo;

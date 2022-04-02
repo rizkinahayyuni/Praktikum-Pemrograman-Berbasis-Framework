@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-const CustomForm = (propState) => ({ propName, propListName }) => WrappedCompone
-nt => {
+const CustomForm = (propState) => ({ propName, propListName }) => WrappedComponent => {
     return class CustomForm extends Component {
         constructor(props) {
             super(props);
@@ -27,8 +26,8 @@ nt => {
                 <div>
                     <WrappedComponent {...this.props} {...this.state} onChange
                         ={this.handleChange} onSubmit={this.handleSubmit} />
-                    The values are {JSON.stringify(this.state[propListName],
-                        null, 2)}
+                        The values are { JSON.stringify(this.state[propListName],
+                            null, 2)}
                 </div>
             )
         }

@@ -11,14 +11,13 @@ const Form = (props) => {
 
         props.onChange(inputName, inputValue);
     }
-    return (
-        <div>
-            <form onSubmit={handleSubmit} onChange={handleChange} >
-                <input name="name" type="text" /><br />
-                <input name="email" type="text" /><br />
-                <button type="submit"> Submit </button>
-            </form>
-        </div>
+    return (<div>
+        <form onSubmit={handleSubmit} onChange={handleChange} >
+            <input name="name" type="text" /><br />
+            <input name="email" type="text" /><br />
+            <button type="submit"> Submit </button>
+        </form>
+    </div>
     )
 }
 const CustomFormDemo = (props) => {

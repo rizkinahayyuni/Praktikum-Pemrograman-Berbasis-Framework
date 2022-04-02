@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-const GenericContainer = ({ reqUrl, reqMethod, resName }) => WrappedCompone
-nt => {
+const GenericContainer = ({ reqUrl, reqMethod, resName }) => WrappedComponent => {
     return class GenericContainer extends Component {
         constructor(props) {
             super(props);

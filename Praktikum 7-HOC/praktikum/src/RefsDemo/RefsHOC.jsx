@@ -18,7 +18,7 @@ const RefsHOC = WrappedComponent => {
         render() {
             return (
                 <div>
-                    <WrappedComponent {...this.props} ref={(instance) => this.instance= instance } />
+                    <WrappedComponent {...this.props} ref={(instance) => this.instance = instance} />
 
                     <button onClick={this.setStateFromInstance}> Submit </button>
                     <h3> The value is {this.state.value} </h3>

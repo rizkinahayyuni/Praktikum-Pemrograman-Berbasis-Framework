@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LoadIndicator from './LoaderHOC.jsx';
-import './ContactsApp.css';
+import './LoaderIndicator.css';
 class LoaderDemo extends Component {
     constructor(props) {
         super(props);
@@ -26,14 +26,13 @@ class LoaderDemo extends Component {
         };
         fetch('https://demo1443058.mockable.io/users/', init)
             .then((response) => (response.json()))
-            .then(
-                (data) => {
-                    console.log(data); this.setState(
-                        prevState => ({
-                            contactList: [...data.contacts]
-                        })
-                    )
-                }
+            .then((data) => {
+                console.log(data); this.setState(
+                    prevState => ({
+                        contactList: [...data.contacts]
+                    })
+                )
+            }
             )
     }
 

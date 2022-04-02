@@ -9,10 +9,9 @@ const RequireAuth = ComposedComponent => {
             }
         }
         render() {
-            return (
-                <div>
-                    <ComposedComponent {...this.props} />
-                </div>
+            return (<div>
+                <ComposedComponent {...this.props} />
+            </div>
             )
         }
     }

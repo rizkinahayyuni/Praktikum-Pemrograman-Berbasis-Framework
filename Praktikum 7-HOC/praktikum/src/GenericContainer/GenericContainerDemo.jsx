@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import GenericContainer from './GenericContainerHOC.jsx';
 class GenericContainerDemo extends Component {
     render() {
-        const ContactListWithGenericContainer = GenericContainer({
-            reqUrl: 'https://demo1443058.mockable.io/users/', reqMethod:'GET', resName:'contacts'})(
+        const ContactListWithGenericContainer = GenericContainer({ reqUrl: 'https://demo1443058.mockable.io/users/', reqMethod: 'GET', resName: 'contacts' })
+            (
                 ContactList);
+
         return (<div className="contactApp">
 
             <ContactListWithGenericContainer />
@@ -25,6 +26,7 @@ const ContactList = ({ contacts }) => {
                             <h4>{contact.name}</h4>
                             <small>{contact.email}</small> <br /><small> {contact.phone}</small>
                         </div>
+
                     </li>
                 )}
             </ul>
