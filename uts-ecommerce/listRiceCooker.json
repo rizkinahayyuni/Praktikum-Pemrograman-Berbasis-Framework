@@ -1,0 +1,209 @@
+{
+    "riceCooker" : [
+        {
+            "id" : 1,
+            "nama" : "Philips Rice Cooker HD3138",
+            "harga" : 729000,
+            "stok" : 10,
+            "image" : "philips3138.jpg",
+            "spesifikasi" : [
+                "Panci bagian dalam dengan gagang anti-panas untuk memudahkan akses",
+                "Fungsi tetap hangat otomatis selama 48 jam",
+                "Logam paduan ekstra tebal memastikan tiap butir nasi dimasak sempurna",
+                "Sistem pemanasan 3D cerdas memasak nasi secara merata ",
+                "Tutup bagian dalam lepas-pasang yang mudah dibersihkan",
+                "Kapasitas ekstra besar 2,0 liter cukup untuk 14 orang",
+                "Bodi stainless steel yang awet untuk kinerja tahan lama ",
+                "Lapisan Bakuhanseki yang canggih 6x lebih keras"
+            ]
+        },
+        {
+            "id" : 2,
+            "nama" : "Philips Rice Cooker HD3119",
+            "harga" : 616000,
+            "stok" : 5,
+            "image" : "philips3119.jpg",
+            "spesifikasi" : [
+                "Pelapis anti-gores canggih agar panci tahan lama",
+                "Sistem pemanasan 3D cerdas memasak nasi secara merata",
+                "Fungsi tetap hangat otomatis selama 48 jam",
+                "Logam paduan ekstra tebal memastikan tiap butir nasi dimasak sempurna",
+                "Kapasitas ekstra besar 2,0 liter cukup untuk 14 orang",
+                "Panci mudah dilepas berkat pegangan yang tetap dingin"
+            ]
+        },
+        {
+            "id" : 3,
+            "nama" : "BOLDe Rice Cooker Mini Super",
+            "harga" : 192000,
+            "stok" : 8,
+            "image" : "bolde.jpg",
+            "spesifikasi" : [
+                "Kelebihan rice cooker SUPERCOOK BOLDe adalah Mudah disimpan dan dijinjing",
+                "Dilengkapi dengan Penutup dengan kunci model klip.",
+                "Daya Listrik : 200 Watt",
+                "Kapasitas 0,6 Liter",
+                "Fungsi Memasak & Menghangatkan",
+                "Dimensi 16 x 17,5 x 18 Cm",
+                "Panjang Kabel : 1 Meter",
+                "Garansi Resmi BOLDe 1 Tahun"
+            ]
+        },
+        {
+            "id" : 4,
+            "nama" : "Rice Cooker Yong Ma 7033",
+            "harga" : 625000,
+            "stok" : 12,
+            "image" : "YongMa7033.jpg",
+            "spesifikasi" : [
+                "Dapat digunakan untuk memasak dan menghangatkan",
+                "Kapasitas 2 L",
+                "Inner Pot : Gold Iron Wing",
+                "Daya : 400 Watt"
+            ]
+        },
+        {
+            "id" : 5,
+            "nama" : "Digital Yong Ma YMC-801",
+            "harga" : 643000,
+            "stok" : 6,
+            "image" : "YongMaYmc801.jpg",
+            "spesifikasi" : [
+                "Warna : Merah, Hitam, Putih",
+                "Kapasitas : 2.0 L / 11 orang",
+                "Inner Pot : Eco Ceramic",
+                "Daya Konsumsi : 400 W",
+                "Tegangan : 220 Volt / 50 Hz",
+                "Panjang Kabel : 1 Meter",
+                "Garansi : Garansi Resmi Yong Ma 1 Tahun"
+            ]
+        },
+        {
+            "id" : 6,
+            "nama" : "Rice Cooker Cosmos CRJ-8229 ",
+            "harga" : 276000,
+            "stok" : 0,
+            "image" : "CosmosCRJ8229.png",
+            "spesifikasi" : [
+                "Dimensi :30 x 30 x 30 cm",
+                "Berat : 4,5 kg",
+                "Fungsi : Memasak, menghangatkan, dan mengukus",
+                "Kapasitas : 2 liter",
+                "Tegangan : 220 volt / 50 Hz",
+                "Daya memasak/menghangatkan : 400 watt/70 watt",
+                "Panci anti lengket : Ya"
+            ]
+        },
+        {
+            "id" : 7,
+            "nama" : "Rice Cooker Cosmos CRJ-1001 ",
+            "harga" : 235000,
+            "stok" : 15,
+            "image" : "CosmosCRJ1001.jpg",
+            "spesifikasi" : [
+                "Kapasitas : 0.6 Liter (hingga 3-4 orang)",
+                "Daya: 300 Watt (memasak) / 30 Watt (menghangatkan) paling rendah dikelasnya",
+                "Tegangan/ Frekuensi: 220-50/60Hz",
+                "Tidak terdapat kukusan",
+                "dimensi : 320 x 320 x 320 mm"
+            ]
+        },
+        {
+            "id" : 8,
+            "nama" : "Panasonic SRCEZ18",
+            "harga" : 525000,
+            "stok" : 3,
+            "image" : "PanasonicSRCEZ18.jpg",
+            "spesifikasi" : [
+                "Bahan Material Alumunium Alloy",
+                "Panjang Kabel 1 Meter",
+                "Kapasitas 1.8 Liter",
+                "Daya 400 Watt",
+                "Tegangan 220 Volt / 50 Hz",
+                "Dimensi (P x L x T) 27.9 cm x 34.8 cm x 23.2 cm"
+            ]
+        },
+        {
+            "id" : 9,
+            "nama" : "Panasonic SRCEZ18FGR",
+            "harga" : 490000,
+            "stok" : 6,
+            "image" : "PanasonicSRCEZ18FGR.jpg",
+            "spesifikasi" : [
+                "Nama Produk : Panasonic Magic Com 3in1 Flower",
+                "Kapasitas : 1.8 Liter",
+                "Daya : 400 Watt",
+                "Tegangan : 220 Volt / 50 Hz",
+                "Dimensi (P x L x T) : 27.9 cm x 34.8 cm x 23.2 cm",
+                "Berat : 4.5 Kg"
+            ]
+        },
+        {
+            "id" : 10,
+            "nama" : "Rice Cooker Miyako MCM-528",
+            "harga" : 216000,
+            "stok" : 10,
+            "image" : "MiyakoMCM528.png",
+            "spesifikasi" : [
+                "Daya : 395 W",
+                "Panjang Kabel : 1 Meter",
+                "Tegangan : 220 VAC",
+                "Kapasitas memasak : 1,8 L",
+                "Body : Polycarbonate",
+                "Pot penanak : Stainless Steel, Anti Lengket",
+                "Dimensi : 29 x 29 x 30 cm",
+                "Berat : Sekitar 3 kg",
+                "Bisa digunakan untuk memasak, mengukus ataupun menghangatkan"
+            ]
+        },
+        {
+            "id" : 11,
+            "nama" : "Rice Cooker Miyako MCM-606",
+            "harga" : 260000,
+            "stok" : 9,
+            "image" : "MiyakoMCM606A.jpg",
+            "spesifikasi" : [
+                "Kategori : Capacity 0.63 L",
+                "Daya Listrik : 300 Watt",
+                "Additional Description : Soft Touch, Tonjolan pada pembuka panci",
+                "Kapasitas Beras: 0.63 L",
+                "Kapastias Nasi : 1.85 L",
+                "Jenis Panci : Marble Pan"
+            ]
+        },
+        {
+            "id" : 12,
+            "nama" : "Rice Cooker Sharp KS-FR18ND-SL",
+            "harga" : 260000,
+            "stok" : 13,
+            "image" : "SharpKSFR18NDSL.jpg",
+            "spesifikasi" : [
+                "Kapasitas : 1.8 Liter",
+                "Daya Listrik Memasak : 400 Watt",
+                "Daya Listrik Menghangatkan : 72 Watt",
+                "Panci Teflon Anti Lengket",
+                "3D Heating Sistem",
+                "Fungsi : Memasak, Menghangatkan, dan Mengukus",
+                "Garansi Resmi SHARP 1 Tahun"
+            ]
+        },
+        {
+            "id" : 13,
+            "nama" : "Rice Cooker Xiaomi Mijia",
+            "harga" : 600000,
+            "stok" : 6,
+            "image" : "XiaomiMijia.jpg",
+            "spesifikasi" : [
+                "Voltage (V): 220V/50Hz",
+                "Color: White",
+                "3L MODEL: MDFBZ02ACM 3L, 650W, 325 x 244 x 202mm",
+                "Capacity Total : 3 L",
+                "Xiaomi MiJia Smart Rice Cooker punya varian mini yang sama-sama punya fitur smart home mereka. Kemampuannya untuk terhubung ke aplikasi Mi di smartphone membuat Anda bisa mengakses berbagai fitur menarik mulai dari pengaturan saat memasak nasi hingga tips memasak"
+            ]
+        }
+    ],
+    "comments": [],
+    "profile": {
+      "name": "typicode"
+    }
+}
