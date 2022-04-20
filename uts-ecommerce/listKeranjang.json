@@ -1,34 +1,24 @@
 {
   "keranjang": [
     {
-      "userId": 9,
-      "id": 1649659317529,
-      "nama": "Panasonic SRCEZ18FGR",
-      "id_barang": 9,
-      "harga": 490000,
-      "image": "PanasonicSRCEZ18FGR.jpg",
-      "total_qty": 1,
-      "total_harga": 490000
-    },
-    {
-      "userId": 12,
-      "id": 1649659320305,
-      "nama": "Rice Cooker Sharp KS-FR18ND-SL",
-      "id_barang": 12,
-      "harga": 260000,
-      "image": "SharpKSFR18NDSL.jpg",
-      "total_qty": 1,
-      "total_harga": 260000
-    },
-    {
-      "userId": 3,
-      "id": 1649659173213,
-      "nama": "BOLDe Rice Cooker Mini Super",
-      "id_barang": 3,
-      "harga": 192000,
-      "image": "bolde.jpg",
+      "userId": 2,
+      "id": 1649811689112,
+      "nama": "Philips Rice Cooker HD3119",
+      "id_barang": 2,
+      "harga": 616000,
+      "image": "philips3119.jpg",
       "total_qty": 2,
-      "total_harga": 384000
+      "total_harga": 1232000
+    },
+    {
+      "userId": 7,
+      "id": 1649811695250,
+      "nama": "Rice Cooker Cosmos CRJ-1001 ",
+      "id_barang": 7,
+      "harga": 235000,
+      "image": "CosmosCRJ1001.jpg",
+      "total_qty": 1,
+      "total_harga": 235000
     }
   ],
   "comments": [],
